@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="colorbox-master/example1/colorbox.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
+    <title>House Loyalty</title>
+
+</head>
+
+<body>
+    <header>
+        <div class="bar">
+            <div id="logo">
+                <img src="images/Logo_USA_Final.png" alt="USA gov" style="width: 100%">
+            </div>
+            <div class="mail">
+                <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto:info@tgif.net"> info@tgif.net</a></p>
+            </div>
+        </div>
+    </header>
+    <div id="navigation">
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress 113<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="senate.html">Senate</a></li>
+                            <li><a href="house.html">House</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="senate_attendance.html">Senate</a></li>
+                            <li><a href="house_attendance.html">House</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="senate_loyalty.html">Senate</a></li>
+                            <li><a href="house_loyalty.html">House</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!--Table container-->
+    <div class="container">
+        <div class="toppart">
+            <div class="info">
+                <h2>Party Loyalty</h2>
+                <p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
+            </div>
+            <div class="toptable">
+                <h4>House at a glance</h4>
+                <table class="table table-hover table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Party</th>
+                            <th>Number of Reps</th>
+                            <th>% Voted with Prty</th>
+                        </tr>
+                    </thead>
+                    <tbody id="generaltable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--bottom part of the site-->
+        <hr>
+        <div class="bottompart">
+            <div class="bottomtable">
+                <h4>Least Loyal (Bottom 10% of Party)</h4>
+                <table class="table table-hover table-bordered table-striped datatable1">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Number Party Votes</th>
+                            <th>% Party Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableMostLoyal">
+                    </tbody>
+                </table>
+            </div>
+            <div class="bottomtable2">
+                <h4>Most Loyal (Top 10% of Party)</h4>
+                <table class="table table-hover table-bordered table-striped datatable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Number Party Votes</th>
+                            <th>% Party Votes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableLeastLoyal">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div id="foot">&#169; 2017 | All Rights Reserved</div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="colorbox-master/jquery.colorbox-min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="statistics.js"></script>
+
+</body>
+
+</html>

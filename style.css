@@ -1,0 +1,69 @@
+#logo {
+    height: 80px;
+    width: 25%;
+}
+body {
+    background-image: url(images/bkgnd_stripe_c.png);
+    border-image-repeat: repeat;
+}
+#navigation .navbar {
+    border-radius: 0px;
+}
+.mail {
+    font-size: 20px;
+    margin-right: 3%;
+    color: #fff;
+}
+.mail a {
+    color: #fff;
+}
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-image: url(images/banner-bg.png);
+}
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+#information{
+    display: flex;  
+    text-align: justify
+}
+.whitehouse{
+    margin-top: 9%;
+    height: 200px;
+    width: 300px;
+}
+.displayforms {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.dropdownstates {
+    display: flex;
+}
+.filters {
+    display: flex;
+}
+form {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.container {
+    text-align: justify;
+    background-color: white;
+}
+.toppart , .bottompart {
+    display: flex;
+    justify-content: space-between;
+}
+.info , .bottomtable  {
+    width: 49%;
+}
+.toptable , .bottomtable2 {
+    width: 40%;
+}
